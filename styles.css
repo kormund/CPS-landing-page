@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.navigation {
+.nav {
     height: 88px;
     background-color: #fff;
     display: flex;
@@ -10,11 +10,12 @@
     border-bottom: 1px solid #D9FFF5;
 }
 
-.navigation__icon {
+.nav__icon {
     background-color: #FF3E79;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    border: none;
 }
 
 .divider {
@@ -24,3 +25,9 @@
     border-radius: 1px;
 }
 
+.title__decor {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0 4px 4px 0;
+}
