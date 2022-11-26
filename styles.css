@@ -2,6 +2,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "TTLakes-Bold";
+    src: url(fonts/TTLakes-Bold.woff) format("woff");
+    font-family: "TTLakes-Regular";
+    src: url(fonts/TTLakes-Regular.woff) format("woff");
+    font-family: "TTLakes-DemiBold";
+    src: url(fonts/TTLakes-DemiBold.woff) format("woff");
+    font-family: "TTLakes-Light";
+    src: url(fonts/TTLakes-Light.woff) format("woff");
+}
+
 .nav {
     height: 88px;
     background-color: #fff;
