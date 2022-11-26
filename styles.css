@@ -3,14 +3,27 @@
 }
 
 @font-face {
-    font-family: "TTLakes-Bold";
+    font-family: "TTLakes";
     src: url(fonts/TTLakes-Bold.woff) format("woff");
-    font-family: "TTLakes-Regular";
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "TTLakes";
     src: url(fonts/TTLakes-Regular.woff) format("woff");
-    font-family: "TTLakes-DemiBold";
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "TTLakes";
     src: url(fonts/TTLakes-DemiBold.woff) format("woff");
-    font-family: "TTLakes-Light";
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: "TTLakes";
     src: url(fonts/TTLakes-Light.woff) format("woff");
+    font-weight: lighter;
 }
 
 .nav {
@@ -35,10 +48,18 @@
     background-color: #eaeaea;
     border-radius: 1px;
 }
+.title {
+    display: flex;
+    align-items: center;
+}
 
 .title__decor {
     width: 4px;
     height: 40px;
     background-color: #41F6D7;
     border-radius: 0 4px 4px 0;
+}
+
+.title__text {
+    font-family: TTLakes-Bold, Arial, Helvetica, sans-serif;
 }
