@@ -19,7 +19,7 @@
 @font-face {
     font-family: "TTLakes";
     src: url(fonts/TTLakes-Medium.woff) format("woff");
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
@@ -98,7 +98,7 @@
     width: 24px;
     height: 40px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    z-index: 1;
+    justify-self: flex-end;
 }
 
 .button__text {
@@ -107,7 +107,7 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    margin: 8px;
+    margin: 8px 22px;
 }
 
 .button, .button--active {
@@ -116,7 +116,7 @@
     white-space: nowrap;
     border: none;
     background: none;
-    height: 40px;
+    height: 42px;
     color: #7E7E82;
 }
 
@@ -149,14 +149,15 @@
     letter-spacing: 0.2px;
     margin: 16px;
     margin-top: 0;
+    color: #1B1C21;
 }
 
 .details__text--medium {
     font-family: "TTLakes", Arial, Helvetica, sans-serif;
-    font-weight: medium;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    width: 100px;
+    letter-spacing: -0.2px;
     color: #1B1C21;
 }
 
