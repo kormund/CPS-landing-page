@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: "TTLakes";
-    src: url(fonts/TTLakes-DemiBold.woff) format("woff");
-    font-weight: bolder;
+    src: url(fonts/TTLakes-Medium.woff) format("woff");
+    font-weight: medium;
 }
 
 @font-face {
@@ -74,6 +74,12 @@
     margin-bottom: 24px;
 }
 
+.main {
+    background-color: #F8F8F8;
+}
+.slide-menu {
+    display: flex;
+}
 
 .slide-menu__buttons::-webkit-scrollbar {
     display: none;
@@ -86,6 +92,13 @@
     flex-wrap: nowrap;
     overflow-x: auto;
     scrollbar-width: none;
+}
+
+.slide-menu__decor {
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    z-index: 1;
 }
 
 .button__text {
@@ -115,8 +128,6 @@
 
 .details__more {
     background: none;
-    font-family: "TTLakes", Arial, Helvetica, sans-serif;
-    font-weight: bolder;
     border: none;
     height: 24px;
     display: flex;
@@ -125,12 +136,9 @@
 }
 
 .details__icon {
-    background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A");
+    background: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z' fill='%2341F6D7'/%3E%3C/svg%3E%0A") no-repeat center;
     height: 24px;
     width: 24px;
-    background-repeat: no-repeat;
-    display: block;
-    padding: 7px 8px;
 }
 
 .details__text {
@@ -143,8 +151,18 @@
     margin-top: 0;
 }
 
+.details__text--medium {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100px;
+    color: #1B1C21;
+}
+
 .company-image {
     background-image: url("/img/bg-image.jpg");
     width: 320px;
     height: 176px;
+    vertical-align: middle;
 }
