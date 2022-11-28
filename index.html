@@ -8,22 +8,38 @@
     <title>Сервисный центр CPS</title>
 </head>
 <body>
-    <nav class="nav">
+  <header class="header">
+    <nav class="header__nav nav">
+      <section class="nav--left">
        <button type="button" class="burger-menu nav__icon">
          <img class ="burger-menu__icon" src="img/icons/burger-menu.svg" alt="Меню">           
        </button>
+       <div class="divider nav__divider divider__tablet"></div>
        <div class="logo nav__logo">
          <img class="logo__icon" src="img/icons/logo.svg" alt="Логотип компании CPS">          
        </div>
+      </section>
+      <section class="nav--right">
+        <button class="phone nav__icon">
+          <img class="phone__icon" src="img/icons/phone.svg" alt="Оставить номер">     
+        </button>
+        <button class="message nav__icon">
+          <img class="message__icon" src="img/icons/message.svg" alt="Написать в чат">     
+        </button>
+        <button class="profile nav__icon">
+          <img class="profile__icon" src="img/icons/profile.svg" alt="Личный кабинет">     
+        </button>
        <div class="divider nav__divider">
        </div>
        <button class="repair nav__icon">
          <img class="repair__icon" src="img/icons/repair.svg" alt="Оставить заявку">     
        </button>
-       <button class="checkstatus nav__icon">
-         <img class="checkstatus__icon" src="img/icons/check-status.svg" alt="">           
+       <button class="checkstatus nav__icon nav__icon--last">
+         <img class="checkstatus__icon" src="img/icons/check-status.svg" alt="Проверить статус">           
        </button>
+      </section>
     </nav>
+  </header>
     <main>
       <footer class="title">
         <div class="title__decor"></div>
@@ -54,7 +70,8 @@
       </section>
       <section class="details">
         <p class="details__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-        </p>         
+        </p>
+        <p class="details__text details__text--more1">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="details__text details__text--more2">что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>         
         <button class="details__more">
           <div class="details__icon"></div>
           <p class="details__text--medium">Читать далее</p>
