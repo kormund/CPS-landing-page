@@ -189,6 +189,7 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     margin-bottom: 16px;
+    width: 288px;
     color: #1B1C21;
 }
 
@@ -241,7 +242,7 @@
     }
 
     .details__text {
-        width: 288px;
+        width: 312px;
     }
 
     .details__info {
