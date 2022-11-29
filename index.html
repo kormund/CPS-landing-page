@@ -42,14 +42,24 @@
   </header>
     <main>
       <footer class="title">
-        <div class="title__decor"></div>
-        <h1 class="title__text">Услуги и сервисы</h1>
-        <button class="title__button repair">
-          <img class="repair__icon" src="img/icons/repair.svg" alt="Оставить заявку">
-        </button>
-        <button class="title__button checkstatus">
-          <img class="checkstatus__icon" src="img/icons/check-status.svg" alt="Проверить статус">
-        </button>
+        <section class="title--left">
+          <div class="title__decor"></div>
+          <h1 class="title__text">Услуги и сервисы</h1>
+        </section>
+        <section class="title--right">
+          <button class="title__button">
+            <p class="title__button--medium-text">Оставить заявку</p>
+            <div class="repair">
+              <div class="repair__icon"></div>
+            </div>
+          </button>
+          <button class="title__button">
+            <p class="title__button--medium-text">Статус ремонта</p>
+            <div class="checkstatus">
+              <div class="checkstatus__icon"></div>
+            </div>
+          </button>
+        </section>
       </footer>
       <section class="slide-menu">
         <div class="slide-menu__buttons">

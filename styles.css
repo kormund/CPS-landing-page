@@ -85,7 +85,7 @@
     display: none;
 }
 
-.title {
+.title, .title--left, .title--right {
     display: flex;
     align-items: center;
 }
@@ -107,7 +107,7 @@
     margin-bottom: 24px;
 }
 
-.title__button {
+.title__button, .title__link {
     display: none;
 }
 
@@ -164,12 +164,15 @@
     border-radius: 6px;
 }
 
+.details__info {
+    margin: 0 16px;
+}
+
 .details__more {
     background: none;
     border: none;
     height: 24px;
     display: flex;
-    margin-left: 16px;
     margin-bottom: 16px;
 }
 
@@ -185,8 +188,7 @@
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.2px;
-    margin: 16px;
-    margin-top: 0;
+    margin-bottom: 16px;
     color: #1B1C21;
 }
 
@@ -205,6 +207,7 @@
 
 .company-image {
     background-image: url("/img/bg-image.jpg");
+    background-size: cover;
     width: 320px;
     height: 176px;
     vertical-align: middle;
@@ -259,4 +262,92 @@
     .nav {
         display: none;
     }
+
+    .title {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .title--left {
+        display: flex;
+        padding-top: 42px;
+        margin-bottom: 8px;
+        align-content: center;
+    }
+    
+    .title--right {
+        display: flex;
+        padding-top: 42px;
+        align-content: center;
+        margin-bottom: 8px;
+    }
+
+    .title__button {
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        margin-right: 32px;
+    }
+
+    .repair__icon {
+        background: url(img/icons/repair.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .checkstatus__icon {
+        background: url(img/icons/check-status.svg) no-repeat center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .title__text {
+        margin-bottom: 0;
+    }
+
+    .title__decor {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+
+    .title__button--medium-text {
+        display: inline;
+        font-family: "TTLakes", Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-right: 8px;
+    }
+
+    .slide-menu__buttons {
+        flex-wrap: wrap;
+        margin-left: 32px;
+        margin-bottom: 0;
+    }
+
+    .slide-menu__decor {
+        display: none;
+    }
+
+    .details__info {
+        margin-left: 34px;
+        margin-top: 16px;
+    }
+
+    .details__text {
+        width: 490px;
+    }
+
+    .details__text--more2 {
+        display: inline;
+    }
+
+    .company-image {
+        width: 531px;
+        height: 307px;
+        border-radius: 6px;
+        margin-right: 40px;
+        margin-left: 36px;
+        background-size: cover;
+    }
+
 }
