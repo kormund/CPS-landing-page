@@ -206,7 +206,7 @@
 }
 
 .company-image {
-    background-image: url("/img/bg-image.jpg");
+    background-image: url("img/bg-image.jpg");
     background-size: cover;
     width: 320px;
     height: 176px;
@@ -238,6 +238,10 @@
     .details {
         display: flex;
         justify-content: space-between;
+    }
+
+    .details__text {
+        width: 288px;
     }
 
     .details__info {
