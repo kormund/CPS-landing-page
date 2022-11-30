@@ -189,7 +189,7 @@
     line-height: 18px;
     letter-spacing: 0.2px;
     margin-bottom: 16px;
-    width: 288px;
+    width: 100%;
     color: #1B1C21;
 }
 
@@ -207,10 +207,10 @@
 }
 
 .company-image {
-    background-image: url("img/bg-image.jpg");
-    background-size: cover;
-    width: 320px;
-    height: 176px;
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    min-height: 176px;
     vertical-align: middle;
 }
 
@@ -241,12 +241,9 @@
         justify-content: space-between;
     }
 
-    .details__text {
-        width: 312px;
-    }
-
     .details__info {
-        max-width: 312px;
+        max-width: 100%;
+        margin-right: 0;
     }
 
     .details__text--more1 {
@@ -254,12 +251,15 @@
     }
 
     .details__image {
-        width: 360px;
-        height: 208px;
+        width: 100%;
+        height: auto;
+        min-width: 360px;
+        min-height: 208px;
+        max-width: 531px;
+        max-height: 307px;
         border-radius: 6px;
         margin-right: 40px;
         margin-left: 48px;
-        background-size: cover;
     }
 }
 
@@ -352,7 +352,7 @@
         border-radius: 6px;
         margin-right: 40px;
         margin-left: 36px;
-        background-size: cover;
+        flex-shrink: 0;
     }
 
 }
