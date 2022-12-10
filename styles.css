@@ -179,8 +179,8 @@
     width: 24px;
     height: 40px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
-    position: fixed;
-    transform: translateX(300px);
+    position: absolute;
+    right: 0;
 }
 
 .button__link {
