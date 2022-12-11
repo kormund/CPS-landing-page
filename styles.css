@@ -525,3 +525,7 @@
 .language__input:checked + .language__text{
     color: #7E7E82;
 }
+
+.burger-menu--crossed:hover, .search:hover, .phone:hover, .message:hover, .profile:hover {
+    opacity: 0.6;
+}
