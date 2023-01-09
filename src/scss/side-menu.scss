@@ -26,6 +26,7 @@
     width: 300px;
     box-shadow: none;
     grid-area: sidenav;
+      z-index: 1;
   }
   }
   
@@ -48,6 +49,12 @@
   &__icon {
     margin-right: 17px;
     margin-left: 24px;
+
+    &.modal__btn--crossed {
+      @media screen and (min-width: 1366px) {
+      display: none;
+    }
+    }
   }
 
   &__logo {
