@@ -37,19 +37,33 @@ export function modals() {
     let modalCall = document.querySelector('.modal__callback');
     let modalStatus = document.querySelector('.modal__status');
     let repair = document.querySelector('.repair');
+    let repairDesk = document.querySelector('.repair--desk');
     let checkStatus = document.querySelector('.check-status');
+    let checkStatusDesk = document.querySelector('.check-status--desk');
 
     repair.addEventListener('click', () => {
         document.body.classList.add('scroll-lock');
         modalCall.classList.add('modal--open');
         overlay.classList.remove('overlay--hide');
-    })
+    });
+
+    repairDesk.addEventListener('click', () => {
+        document.body.classList.add('scroll-lock');
+        modalCall.classList.add('modal--open');
+        overlay.classList.remove('overlay--hide');
+    });
 
     checkStatus.addEventListener('click', () => {
         document.body.classList.add('scroll-lock');
         modalStatus.classList.add('modal--open');
         overlay.classList.remove('overlay--hide');
-    })
+    });
+
+    checkStatusDesk.addEventListener('click', () => {
+        document.body.classList.add('scroll-lock');
+        modalStatus.classList.add('modal--open');
+        overlay.classList.remove('overlay--hide');
+    });
 
     modalBtnClose[1].addEventListener('click', () => {
         document.body.classList.remove('scroll-lock');
