@@ -1,0 +1,36 @@
+.devices {
+  &__swiper {
+    @media screen and (min-width: 767px) {
+      height: 190px;
+    }
+  }
+
+  &__swiper > .swiper-wrapper > .swiper-slide {
+    height: 160px;
+  }
+
+  &__swiper--more {
+    @media screen and (min-width: 767px) {
+      height: 720px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      height: 360px;
+    }
+  }
+
+  &__slide.swiper-slide {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #1B1C21;
+    font-size: 16px;
+
+    align-items: flex-start;
+    padding: 16px;
+    height: 160px;
+
+    & > .swiper-slide__btn {
+      align-self: end;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.slide-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  background: #F8F8F8;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__buttons {
+    list-style: none;
+    margin-left: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    text-decoration: none;
+    color: #7E7E82;
+  }
+
+  &__decor {
+    width: 24px;
+    height: 40px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    position: absolute;
+    right: 0;
+  }
+
+  &__button {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    white-space: nowrap;
+    border: none;
+    background: none;
+    height: 42px;
+    color: #7E7E82;
+    text-align: center;
+  }
+
+  &__button:first-child {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    white-space: nowrap;
+    background: none;
+    height: 42px;
+    color: #7E7E82;
+    text-align: center;
+    background: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+  }
+
+  @media screen and (min-width: 1119px) {
+
+
+    &__buttons {
+      flex-wrap: wrap;
+      margin-left: 32px;
+      margin-bottom: 0;
+    }
+
+    &__decor {
+      display: none;
+    }
+  }
+}

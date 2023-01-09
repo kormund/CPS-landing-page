@@ -1,0 +1,48 @@
+.brands {
+  background-color: #F8F8F8;
+  overflow: hidden;
+
+  &__swiper {
+    @media screen and (min-width: 767px) {
+      height: 190px;
+    }
+  }
+
+  &__swiper--more {
+    @media screen and (min-width: 767px) {
+      height: 360px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      height: 270px;
+    }
+  }
+
+  &__main-text {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 16px;
+    color: #7E7E82;
+  }
+
+  &__header {
+    background: linear-gradient(90deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  }
+
+  @media screen and (min-width: 768px) {
+
+    &__main-text {
+      margin-left: 24px;
+    }
+  }
+
+  @media screen and (min-width: 1119px) {
+
+    &__main-text {
+      margin-left: 32px;
+    }
+  }
+}

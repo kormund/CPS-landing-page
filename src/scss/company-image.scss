@@ -1,0 +1,19 @@
+.company-image {
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+  min-height: 176px;
+  vertical-align: middle;
+
+  @media screen and (min-width: 1119px) {
+
+    & {
+      width: 531px;
+      height: 307px;
+      border-radius: 6px;
+      margin-right: 40px;
+      margin-left: 36px;
+      flex-shrink: 0;
+    }
+  }
+}

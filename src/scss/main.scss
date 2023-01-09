@@ -4,15 +4,32 @@
 @import "vars";
 @import "settings";
 
+@import "btn-link";
+@import "burger-menu";
+@import "check-status";
+@import "company-image";
+@import "contacts";
+@import "details";
+@import "devices";
+@import "brands";
+@import "divider";
+@import "footer";
+@import "language";
+@import "logo";
+@import "main-footer";
+@import "menu";
+@import "message";
+@import "modal";
+@import "nav";
+@import "overlay";
+@import "phone";
+@import "prices";
+@import "profile";
+@import "repair";
+@import "round-btn";
+@import "search";
+@import "side-menu";
+@import "slide-menu";
+@import "swiper";
+@import "title";
 
-.header {
-  text-align: center;
-  & img {
-    width: 30%;
-  }
-}
-
-.welcome-title {
-  margin-top: 50px;
-  font-size: 6em;
-}

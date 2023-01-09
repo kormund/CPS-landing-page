@@ -1,0 +1,234 @@
+.prices {
+  &__swiper {
+    height: 260px;
+
+    @media screen and (min-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      height: 411px;
+    }
+    & > .swiper-pagination {
+      bottom: 16px !important;
+    }
+  }
+
+  &__slide.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 260px;
+    height: 200px;
+    padding: 16px;
+    position: relative;
+
+    @media screen and (min-width: 767px) {
+      width: auto;
+      max-width: unset;
+      height: 64px;
+      padding: 0 15px;
+      border: none;
+      margin: 0 16px;
+      border-bottom: 1px solid #eaeaea;
+      display: grid;
+      grid-template-columns: 1fr 95px 250px;
+      align-items: center;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @media screen and (min-width: 1365px) {
+        padding: 0 20px;
+        grid-template-columns: 1fr 225px 370px;
+      }
+    }
+  }
+
+  &__wrapper.swiper-wrapper {
+    margin-left: 8px;
+
+    @media screen and (min-width: 767px) {
+      display: table;
+      margin: 0;
+      padding: 0;
+      background: #F8F8F8;
+      border-radius: 6px;
+    }
+  }
+
+  &__service {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 767px) {
+      margin: 0;
+    }
+
+    &::before {
+      content: 'Ремонтные услуги';
+      display: block;
+      font-weight: 500;
+      color: #7E7E82;
+      line-height: 14px;
+      margin-bottom: 4px;
+
+      @media screen and (min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+
+  &__value {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 767px) {
+      margin: 0;
+    }
+
+    &::before {
+      content: 'Цена';
+      display: block;
+      font-weight: 500;
+      color: #7E7E82;
+      line-height: 14px;
+      margin-bottom: 4px;
+
+      @media screen and (min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__term {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+
+    &::before {
+      content: 'Срок';
+      display: block;
+      font-weight: 500;
+      color: #7E7E82;
+      line-height: 14px;
+      margin-bottom: 4px;
+      
+      @media screen and (min-width: 767px) {
+        display: none;
+      }
+    }
+  }
+
+  &__btn {
+    width: 119px;
+    height: 32px;
+    background: #FF3E79;
+    border: none;
+    border-radius: 16px;
+    padding: 4px ;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+
+    &--bd {
+      font-family: "TTLakes", Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+      letter-spacing: -0.15px;
+
+      text-transform: uppercase;
+
+      &::after {
+        content: "";
+        display: inline-block;
+        background: url("data:image/svg+xml,%3Csvg width='7' height='10' viewBox='0 0 7 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.8 4.99994L0.791554 2.229C0.3641 1.83529 0.361125 1.16138 0.785088 0.763917L0.920293 0.637162C1.30321 0.278177 1.89851 0.276333 2.28364 0.632939L6.93812 4.94264C6.9715 4.97355 6.9715 5.02633 6.93812 5.05723L2.34674 9.30851C1.92606 9.69803 1.27582 9.69601 0.857554 9.30389V9.30389C0.394457 8.86974 0.397706 8.13363 0.864616 7.70358L3.8 4.99994Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
+        width: 7px;
+        height: 10px;
+        margin-left: 17px;
+      }
+    }
+  }
+
+  &__info {
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1B1C21;
+    letter-spacing: 0.2px;
+    margin: 0 16px 16px 16px;
+
+    @media screen and (min-width: 767px) {
+      width: 420px;
+      margin-left: 24px;
+    }
+  }
+
+  &__commercial {
+    display: inline-block;
+    font-family: "TTLakes", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    width: 192px;
+
+    @media screen and (min-width: 767px) {
+      width: auto;
+      margin-left: 24px;
+    }
+
+    &::after {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 5px;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: url("data:image/svg+xml,%3Csvg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.1625 9.60411C0.838186 9.97957 0.838186 10.536 1.1625 10.9115L1.29432 11.0641C1.69317 11.5258 2.40899 11.5258 2.80785 11.0641L6.8372 6.39937C7.16152 6.02392 7.16152 5.46745 6.8372 5.092L2.80785 0.427277C2.40899 -0.0344715 1.69317 -0.0344715 1.29432 0.427278L1.1625 0.57988C0.838185 0.955333 0.838186 1.5118 1.1625 1.88726L4.49539 5.74569L1.1625 9.60411Z' fill='%23FF3E79'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
+    }
+  }
+
+  &__title {
+    display: none;
+    min-width: 720px;
+    height: 16px;
+    padding: 0 30px;
+    grid-template-columns: 1fr 95px 250px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 767px) {
+      display: grid;
+    }
+
+    @media screen and (min-width: 1366px) {
+      grid-template-columns: 1fr 225px 370px;
+      padding: 0 35px;
+    }
+
+    & > .prices__service, .prices__value, .prices__term {
+      color: #7E7E82;
+    }
+
+  }
+}

@@ -1,0 +1,18 @@
+.divider {
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 1px;
+
+  &__tablet {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__tablet {
+      display: block;
+      margin-left: 4px;
+      margin-right: 20px;
+    }
+  }
+}

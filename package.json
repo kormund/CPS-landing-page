@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=development webpack serve --mode development"
   },
   "keywords": [],
-  "author": "Iraes",
+  "author": "kormund",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.10",
@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "focus-visible": "^5.2.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.4.5"
   }
 }

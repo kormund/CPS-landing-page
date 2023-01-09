@@ -1,0 +1,16 @@
+.footer {
+  justify-self: flex-end;
+
+  &__buttons {
+    padding-left: 24px;
+    display: flex;
+    gap: 16px;
+  }
+
+  &__language {
+    display: flex;
+    gap: 7px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+  }
+}
